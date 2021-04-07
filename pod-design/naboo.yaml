@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: naboo
+  name: naboo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: naboo
+  template:
+    metadata:
+      labels:
+        app: naboo
+    spec:
+      containers:
+      - name: nginx
+        image: bitnami/nginx

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl get hpa naboo -o jsonpath='{.spec.targetCPUUtilizationPercentage}' | grep -q -w 80
+kubectl get hpa naboo -o jsonpath='{.spec.minReplicas}' | grep -q -w 2
+kubectl get hpa naboo -o jsonpath='{.spec.maxReplicas}' | grep -q -w 5

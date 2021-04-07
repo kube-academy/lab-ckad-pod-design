@@ -1,0 +1,13 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: sample-training-portal
+spec:
+  portal:
+    registration:
+      type: anonymous
+  workshops:
+  - name: ckad-practice-pod-design
+    capacity: 1
+    expires: 20m
+    orphaned: 5m

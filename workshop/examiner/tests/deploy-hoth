@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl get deploy hoth -o jsonpath='{.spec.template.spec.containers[*].image}' | grep -q -w 'apache:2.4.46'
+kubectl get deploy hoth -o jsonpath='{.status.readyReplicas}' | grep -q -w 4

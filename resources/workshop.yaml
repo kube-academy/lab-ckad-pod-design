@@ -1,0 +1,30 @@
+---
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: ckad-practice-pod-design
+spec:
+  title: CKAD Practice - Pod Design
+  description: A port of the Pod Design section of Liptan Biswas' CKAD practice challenge
+  vendor: kube.academy
+  difficulty: beginner
+  duration: 20m
+  url: https://github.com/kube-academy/lab-ckad-pod-design
+  content:
+    files: github.com/kube-academy/lab-ckad-pod-design
+  session:
+    namespaces:
+      security:
+        policy: anyuid
+      budget: medium
+      secondary:
+      - name: $(session_namespace)-apps
+        budget: small
+    applications:
+      terminal:
+        enabled: true
+        layout: default
+      editor:
+        enabled: true
+      examiner:
+        enabled: true

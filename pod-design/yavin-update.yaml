@@ -1,0 +1,19 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: yavin
+  name: yavin
+spec:
+  selector:
+    matchLabels:
+      app: yavin
+  template:
+    metadata:
+      labels:
+        app: yavin
+    spec:
+      containers:
+      - name: nginx
+        image: bitnami/nginx-error

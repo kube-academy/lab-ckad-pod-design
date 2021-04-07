@@ -1,0 +1,14 @@
+.cache
+.config
+.docker
+.bash_history
+.gitconfig
+.kube
+.lesshst
+.local
+.ssh
+.theia
+.webdav
+.yarn
+*.swp
+

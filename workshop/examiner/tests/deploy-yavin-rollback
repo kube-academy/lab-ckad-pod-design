@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl rollout status deploy yavin --timeout=1s
+kubectl apply -f ~/yavin.json --dry-run=client -o jsonpath='{.status.readyReplicas}' | grep -q -w 1
