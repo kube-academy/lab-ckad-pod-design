@@ -18,7 +18,7 @@ def check_cmd(command, test):
 
 print("\nQuestion 1:")
 check_cmd("kubectl get deploy hoth -o jsonpath='{.spec.template.spec.containers[*].image}' | grep -q -w 'apache:2.4.46'", "Deployment hoth uses apache:2.4.46 image?")
-check_cmd("kubectl get deploy hoth -o jsonpath='{.status.readyReplicas}' | grep -q -w 4", "Deployment hoth has 4 running pods?")
+check_cmd("kubectl get deploy hoth -o jsonpath='{.status.readyReplicas}' | grep -q -w 2", "Deployment hoth has 2 running pods?")
 
 print("\nQuestion 2:")
 check_cmd("kubectl rollout status deploy yavin --timeout=1s", "Deployment yavin is rolled back?")
