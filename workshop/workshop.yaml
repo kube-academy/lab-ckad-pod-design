@@ -4,6 +4,7 @@ modules:
   activate:
   - workshop-overview
   - preface
+  - problem-validation
   - exercises/01-problem
   - exercises/02-problem
   - exercises/03-problem

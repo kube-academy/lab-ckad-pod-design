@@ -39,15 +39,3 @@ Your environment has been pre-configured with command completion, and a few shor
 - If you are comfortable with vim, vim bindings is turned on in the bash command shell (`set -o vi`).  It's often quicker to edit an existing command than to re-type it from scratch.
 
 - The `.inputrc` file has been set for history search.  I find this to be one of the [most useful things in bash](https://coderwall.com/p/oqtj8w/the-single-most-useful-thing-in-bash).  I recommend you take advantage of it.
-
-## Problem validation
-
-Similar to the katacoda workshop, each section provides a mechanism to validate your solutions.
-
-Try to get in the habit of doing this test-first:
-
-- run the check and watch it fail
-- implement your solution
-- re-run the check and watch it pass
-
-A script is also provided at the end of the workshop to run all checks.
