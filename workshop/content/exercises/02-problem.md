@@ -31,7 +31,7 @@ There is a problem.
 
 1. Rollback the Deployment `yavin` so that the Pods are working again.
 
-1. Export `yavin` deployment spec in JSON to the file `yavin.json`.
+1. Export `yavin` deployment spec in JSON to the file ``yavin.json``{{copy}}.
 
 ```examiner:execute-test
 name: deploy-yavin-rollback

@@ -1,5 +1,5 @@
 
-1. Create a Cron job named `bespin` that runs the command `date` using the `bitnami/kubectl` image every 5 minutes (`*/5 * * * *`).
+1. Create a Cron job named ``bespin``{{copy}} that runs the command ``date``{{copy}} using the ``bitnami/kubectl``{{copy}} image every 5 minutes (``*/5 * * * *``{{copy}}).
 
 ```examiner:execute-test
 name: deploy-bespin-cj
