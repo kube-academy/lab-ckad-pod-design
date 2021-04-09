@@ -18,7 +18,7 @@ Be mindful however that you are not cluster administrator, and cannot run admini
 - `kubectl get nodes`
 - `kubectl create namespace x`
 
-Another, perhaps more subtle constraint of this particular cluster is its default pod security policy, which does not allow running containers as the root user.  This workshop use bitnami container images that were designed with this in mind.
+Another, perhaps more subtle constraint of this particular cluster is its default pod security policy, which does not allow running containers as the root user.  This workshop use [bitnami container images](https://bitnami.com/stacks/containers) that were [designed with this in mind](https://engineering.bitnami.com/articles/why-non-root-containers-are-important-for-security.html).
 
 If you come across any issues including misspellings, instructions which do not work as advertised, please let us know, by opening an issue against [this workshop's source repository](https://github.com/eitansuez/lab-ckad-practice/issues).
 
