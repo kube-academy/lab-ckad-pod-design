@@ -15,8 +15,8 @@ Here is how it works:
 
 Separately, it's also nice to have a script to run checks for all the problems at once.
 
-Run the script `check-core-concepts` to verify all your solutions.
+Run the script `check-pod-design` to verify all your solutions.
 
 ```terminal:execute
-command: check-core-concepts
+command: check-pod-design
 ```
