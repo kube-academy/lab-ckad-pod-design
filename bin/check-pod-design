@@ -25,7 +25,7 @@ check_cmd("kubectl rollout status deploy yavin --timeout=1s", "Deployment yavin 
 check_cmd("kubectl apply -f ~/yavin.json --dry-run=client -o jsonpath='{.status.readyReplicas}' | grep -q -w 1", "File ~/yavin.json contains deployment spec in JSON?")
 
 print("\nQuestion 3:")
-check_cmd("kubectl get hpa naboo -o jsonpath='{.spec.targetCPUUtilizationPercentage}' | grep -q -w 80", "HPA naboo scales at 80% CPU?")
+check_cmd("kubectl get hpa naboo -o jsonpath='{.spec.metrics[*].resource.target.averageUtilization}' | grep -q -w 80", "HPA naboo scales at 80% CPU?")
 check_cmd("kubectl get hpa naboo -o jsonpath='{.spec.minReplicas}' | grep -q -w 2", "HPA naboo has 2 minimum replicas?")
 check_cmd("kubectl get hpa naboo -o jsonpath='{.spec.maxReplicas}' | grep -q -w 5", "HPA naboo has 5 maximum replicas?")
 
